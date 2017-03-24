@@ -136,7 +136,7 @@ $(document).ready(function(){
 
     if (playerMoves[index] == simonMoves[index]){ // Player chose right pad and waiting answer
       if (playerMoves.length == simonMoves.length){ // Player completed series
-        if (playerMoves.length == 3){ // Player has beaten Simon!
+        if (playerMoves.length == 20){ // Player has beaten Simon!
           display("WIN")
           flashPad(0, 100);
           flashPad(1, 100);
