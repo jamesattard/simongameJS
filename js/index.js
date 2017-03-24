@@ -111,8 +111,22 @@ $(document).ready(function(){
     var index = playerMoves.length - 1;
 
     if (playerMoves[index] == moves[index]){
-
       if (playerMoves.length == moves.length){
+        if (playerMoves.length == 20){
+          display("WIN")
+          lightIt(0, 1300);
+          lightIt(1, 1300);
+          lightIt(2, 1300);
+          lightIt(3, 1300);
+          lightIt(2, 2600);
+          lightIt(1, 2600);
+          lightIt(0, 2600);
+          winTimeout = setTimeout(function(){
+            moves = [];
+            launchNextSimon();
+          }, 1500)
+        }
+        else {
         nextMoveTimeout = setTimeout(function(){
           launchNextSimon();
           }, 800);
