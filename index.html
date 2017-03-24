@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Simon Game</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+    <script src="https://use.fontawesome.com/80c9a7f760.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Banner -->
+    <div class="banner text-primary">
+      <div class="text">
+        <h1>Simon Game</h1>
+      </div>
+    </div>
+
+    <!-- Simon Game Container -->
+    <audio id="blueSound" preload="auto">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="redSound" preload="auto">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="yellowSound" preload="auto">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="greenSound" preload="auto">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="wrong" preload="auto">
+      <source src="https://a.clyp.it/nmkpok4u.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+      <div class="box">
+
+          <div class="color-btn border float clear" id="green"></div>
+          <div class="color-btn border float border" id="red"></div>
+          <div class="color-btn border float clear" id="yellow"></div>
+          <div class="color-btn border float" id="blue"></div>
+
+          <div class="circle border text-center">
+          	<div class="top-z">
+            	<div class="cntr">
+              	<div class="" id="title"><em>Simon</em>&reg;</div>
+                <div class="float ctrl-btn">
+                  <button id="start"></button>
+                  <div class="label">START</div>
+                </div>
+                <div class="float ctrl-btn">
+                  <div id="screen" class="text-center"></div>
+                  <div class="label">LEVEL</div>
+                </div>
+                <div class="float ctrl-btn">
+                  <div class="border" id="display">
+                    <div id="strict-light"></div>
+                  </div>
+                  <button id="strict"></button>
+                  <div class="label">STRICT</div>
+                </div>
+                <div class="float" id="on-off">
+                  <div class="float">OFF</div>
+                  <div class="slider float slider-on-state cursor" id="off"></div>
+                  <div class="slider float slider-off-state cursor" id="on"></div>
+                  <div>ON</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="text">
+        <p>by James J. Attard &copy; <script>document.write(new Date().getFullYear());</script></p>
+      </div>
+    </div>
+
+  </body>
+</html>
